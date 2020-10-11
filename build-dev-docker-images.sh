@@ -10,5 +10,3 @@ docker build --force-rm -t "petclinic-velt-service:dev" ./spring-petclinic-velt-
 docker build --force-rm -t "petclinic-visits-service:dev" ./spring-petclinic-visits-service
 docker build --force-rm -t "petclinic-prometheus-server:dev" ./docker/prometheus
 docker build --force-rm -t "petclinic-grafana-server:dev" ./docker/grafana
-
-
