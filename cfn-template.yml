@@ -1,0 +1,38 @@
+#cfn-template.yml
+
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  This Template 
+Parameters: 
+KeyPairNAme: 
+  Description: Enter name of your key pair fior SSH Connection
+  Type:
+  ConstrainDescription:
+
+Resources:
+  MySecurityGroup:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: Enable Conection for Docker  #required      
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp:  
+      Tags:
+        - Tag
+      VpcId: String
+  
+Outputs:
